@@ -187,7 +187,6 @@ class test_authenticated_movieviewset(TestCase):
         )
         self.client.force_authenticate(self.user)
 
-        # Let's create two movies with distinct data so we can test the filters!
         self.movie1 = sample_movie(title="Inception")
         self.movie2 = sample_movie(title="Batman")
 
